@@ -11,7 +11,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.sqlite3',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'mytest.sqlite',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
@@ -109,6 +109,7 @@ WSGI_APPLICATION = 'mytest.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    "/home/muhomor/git/django_project/mytest/mytest/template",
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
@@ -123,6 +124,7 @@ INSTALLED_APPS = (
     'mytest.apps.note',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
+    'bootstrap_toolkit',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
