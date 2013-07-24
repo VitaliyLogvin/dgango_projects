@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Note</title>
+		<meta charset="utf-8">
+		{% load bootstrap_toolkit %}{% bootstrap_stylesheet_tag %}
+	</head>
+	<body>
+		<div class="container">
+			<div id="container" class="flex">
+				{% for note in notes %}
+					<h2>{{ note.title }} <small>{{ note.date_time }}</small></h2>
+					<div class="hero-unit">
+						{{note.desc|safe}}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</body>
+</html>
